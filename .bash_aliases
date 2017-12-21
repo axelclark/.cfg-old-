@@ -16,12 +16,14 @@ alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias pgrmpid="rm /usr/local/var/postgres/postmaster.pid"
 
 #Elixir Phoenix
-alias mps="mix phoenix.server"
+alias mps="mix phx.server"
 alias ism="iex -S mix"
 alias mt="mix test --exclude integration"
 alias mta="mix test"
+alias mts="mix test --stale"
 alias mec="mix ecto.create"
 alias mem="mix ecto.migrate"
 
 #ex338
 alias ex338="cd workspace/ex338 && mvim"
+alias config='/usr/bin/git --git-dir=/Users/axelclark/.cfg/ --work-tree=/Users/axelclark'
