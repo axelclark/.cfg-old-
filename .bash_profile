@@ -22,3 +22,9 @@ export PATH="$PATH:~/.mix/escripts:~axelclark/bin"
 . $HOME/.asdf/completions/asdf.bash
 
 export CDPATH=".:~/workspace"
+
+export PATH="$HOME/.bin:$PATH"
+
+# recommended by brew doctor
+export PATH="/usr/local/bin:$PATH"
+source /Users/jackclark/.asdf/asdf.sh

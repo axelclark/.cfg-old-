@@ -26,4 +26,4 @@ alias mem="mix ecto.migrate"
 
 #ex338
 alias ex338="cd workspace/ex338 && mvim"
-alias config='/usr/bin/git --git-dir=/Users/axelclark/.cfg/ --work-tree=/Users/axelclark'
+alias config="/usr/bin/git --git-dir=/Users/jackclark/.cfg/ --work-tree=/Users/jackclark"
