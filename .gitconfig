@@ -1,18 +1,18 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-	name = Axel Clark
-	email = axelclark2@yahoo.com
+  name = Axel Clark
+  email = axelclark2@yahoo.com
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [push]
-	default = matching
+  default = matching
 [alias]
   aliases = !git config -l | grep alias | cut -c 7-
   b = branch
   c = commit
   cm = commit -m
-	co = checkout
+  co = checkout
   d = diff
   m = merge
   ps = push
@@ -21,6 +21,6 @@
   rbi = rebase --interactive
 
 [core]
-	autocrlf = input
-	safecrlf = true
-	editor = vim
+  autocrlf = input
+  safecrlf = true
+  editor = vim
