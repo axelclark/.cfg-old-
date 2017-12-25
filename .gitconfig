@@ -19,6 +19,7 @@
   pso = push origin
   pl = pull
   rbi = rebase --interactive
+  s = status
 
 [core]
   autocrlf = input
