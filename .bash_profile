@@ -16,7 +16,7 @@ export PS1="[\W]\[\033[34m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 export MIX_TARGET=rpi3
 
-export PATH="$PATH:~/.mix/escripts:~axelclark/bin"
+export PATH="$PATH:$HOME/.mix/escripts:~jackclark/bin"
 
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
@@ -26,8 +26,7 @@ export CDPATH=".:~/workspace"
 export PATH="$HOME/.bin:$PATH"
 
 # Add node modules to $PATH
-export PATH="$PATH:.asdf/installs/nodejs/9.3.0/.npm/bin"
+export PATH="$PATH:$HOME/.asdf/installs/nodejs/9.3.0/.npm/bin"
 
 # recommended by brew doctor
-export PATH="/usr/local/bin:$PATH"
-source /Users/jackclark/.asdf/asdf.sh
+export PATH="$HOME/usr/local/bin:$PATH"
