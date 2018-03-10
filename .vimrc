@@ -86,6 +86,7 @@ map <Leader>w <C-w>
 map <Leader>k :Explore<cr>
 map <Leader>a :!mix test --no-color<cr>
 map <Leader>t :!mix test % --no-color<cr>
+map <Leader>mf gggqG 
 " vim-fugitive for git status
 map <Leader>g :Gstatus<cr>
 " Ctags jump to definition
@@ -176,8 +177,10 @@ endif
   endif
 
 " Make it obvious where 80 characters is
-set textwidth=80
+set textwidth=98
 set colorcolumn=+1
+"Set the guifont
+:set guifont=Menlo:h10
 
 " Numbers
 set number

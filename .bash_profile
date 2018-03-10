@@ -30,3 +30,6 @@ export PATH="$PATH:$HOME/.asdf/installs/nodejs/9.3.0/.npm/bin"
 
 # recommended by brew doctor
 export PATH="$HOME/usr/local/bin:$PATH"
+
+# Enable history in IEX
+export ERL_AFLAGS="-kernel shell_history enabled"
