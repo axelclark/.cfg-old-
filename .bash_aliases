@@ -24,6 +24,9 @@ alias mts="mix test --stale"
 alias mec="mix ecto.create"
 alias mem="mix ecto.migrate"
 
+#ReactNative
+alias r-ios="react-native run-ios"
+
 #ex338
 alias ex338="cd workspace/ex338 && mvim"
 alias config="/usr/bin/git --git-dir=/Users/jackclark/.cfg/ --work-tree=/Users/jackclark"
