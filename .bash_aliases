@@ -26,6 +26,7 @@ alias mem="mix ecto.migrate"
 
 #ReactNative
 alias r-ios="react-native run-ios"
+alias crna="create-react-native-app"
 
 #ex338
 alias ex338="cd workspace/ex338 && mvim"
