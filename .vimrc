@@ -176,8 +176,10 @@ endif
     let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
   endif
 
-" Make it obvious where 80 characters is
-set textwidth=98
+" Make it obvious where 80 characters is (98 for Elixir)
+set textwidth=80
+:au BufNewFile,BufRead *.ex setlocal textwidth=98
+:au BufNewFile,BufRead *.exs setlocal textwidth=98
 set colorcolumn=+1
 "Set the guifont
 :set guifont=Menlo:h10
@@ -239,10 +241,11 @@ set ttimeoutlen=1
 " vim-gutentags
 let g:gutentags_cache_dir = '~/.tags_cache'
 
-" Remove trailing whitespace on save for ruby and elixir files.
+" Remove trailing whitespace on save for ruby, elixir, and js files.
 au BufWritePre *.rb :%s/\s\+$//e
 au BufWritePre *.ex :%s/\s\+$//e
 au BufWritePre *.exs :%s/\s\+$//e
+au BufWritePre *.js :%s/\s\+$//e
 
 " Merge a tab into a vsplit in the previous window
 function! MergeTabs()
