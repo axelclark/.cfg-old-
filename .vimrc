@@ -86,6 +86,7 @@ map <Leader>w <C-w>
 map <Leader>k :Explore<cr>
 map <Leader>a :!mix test --no-color<cr>
 map <Leader>t :!mix test % --no-color<cr>
+map <Leader>yt :!yarn test % --no-color<cr>
 map <Leader>mf gggqG 
 " vim-fugitive for git status
 map <Leader>g :Gstatus<cr>
