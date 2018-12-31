@@ -69,6 +69,8 @@ augroup END
 " ALE Linting Config
 " ==================================
 " set completeopt=menu,menuone,preview,noselect,noinsert
+autocmd FileType elixir nnoremap <c-]> :ALEGoToDefinition<cr>
+autocmd FileType elixir nnoremap <c-[> :ALEFindReferences<cr>
 
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 1
