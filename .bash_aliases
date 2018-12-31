@@ -35,8 +35,12 @@ alias yt="yarn test"
 alias ex338="cd workspace/ex338 && mvim"
 alias config="/usr/bin/git --git-dir=/Users/jackclark/.cfg/ --work-tree=/Users/jackclark"
 alias reset338="mix ecto.reset && mix run priv/repo/user_seeds.exs && mix run priv/repo/dev_seeds.exs"
-alias rmntl="find . -name '*Netrw*' -exec rm -f {} \;"
 
 #Git
-alias gri="git commit -am 'f' && git rebase -i origin/master"
+alias gri="git rebase -i origin/master"
+alias grif="git commit -am 'f' && git rebase -i origin/master"
 alias gpf="git push origin $(git branch) --force-with-lease"
+alias gs="git status"
+
+#Vim
+alias rmntl="find . -name '*Netrw*' -exec rm -f {} \;"
