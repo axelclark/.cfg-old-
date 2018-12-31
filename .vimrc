@@ -68,17 +68,28 @@ augroup END
 " ==================================
 " ALE Linting Config
 " ==================================
+" set completeopt=menu,menuone,preview,noselect,noinsert
+
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': ['eslint', 'prettier'],
+\   'elixir': ['mix_format'],
 \}
 
 " Only run linters named in ale_linters settings.
 let g:ale_linters_explicit = 1
 let g:ale_linters = {
 \   'javascript': ['eslint', 'prettier'],
+\   'elixir': ['elixir-ls']
 \}
+let g:ale_elixir_elixir_ls_release = '/Users/jackclark/workspace/elixir-ls/rel'
+
+" Enable completion where available.
+" This setting must be set before ALE is loaded.
+" let g:ale_completion_enabled = 1
+
 
 " ==================================
 
@@ -102,12 +113,12 @@ map <Leader>k :Explore<cr>
 map <Leader>a :!mix test --no-color<cr>
 map <Leader>t :!mix test % --no-color<cr>
 map <Leader>yt :!yarn test % --no-color<cr>
-map <Leader>mf gggqG 
+map <Leader>mf gggqG
 " vim-fugitive for git status
 map <Leader>g :Gstatus<cr>
 " Ctags jump to definition
-map <Leader>c <C-]> 
-" Ctags jump back 
+map <Leader>c <C-]>
+" Ctags jump back
 map <Leader>b <C-o>
 
 let g:netrw_liststyle=3
@@ -126,9 +137,6 @@ nmap k gk
 
 " Copy the entire buffer into the system register
 nmap <leader>co ggVG*y
-
-" run Neomake
-autocmd! BufWritePost * Neomake
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Test-running stuff
@@ -256,12 +264,6 @@ set ttimeoutlen=1
 
 " vim-gutentags
 let g:gutentags_cache_dir = '~/.tags_cache'
-
-" Remove trailing whitespace on save for ruby, elixir, and js files.
-au BufWritePre *.rb :%s/\s\+$//e
-au BufWritePre *.ex :%s/\s\+$//e
-au BufWritePre *.exs :%s/\s\+$//e
-au BufWritePre *.js :%s/\s\+$//e
 
 " Merge a tab into a vsplit in the previous window
 function! MergeTabs()
