@@ -26,6 +26,7 @@ Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'neomake/neomake'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'w0rp/ale'
 
 " Colors
 Plugin 'nanotech/jellybeans.vim'
@@ -66,6 +67,23 @@ augroup END
 
 " ==================================
 
+
+" ==================================
+" ALE Linting Config
+" ==================================
+" Set this variable to 1 to fix files when you save them.
+let g:ale_fix_on_save = 1
+let g:ale_fixers = {
+\   'javascript': ['eslint', 'prettier'],
+\}
+
+" Only run linters named in ale_linters settings.
+let g:ale_linters_explicit = 1
+let g:ale_linters = {
+\   'javascript': ['eslint', 'prettier'],
+\}
+
+" ==================================
 
 " Leader
 let mapleader = " "
