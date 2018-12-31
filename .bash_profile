@@ -26,7 +26,7 @@ export CDPATH=".:~/workspace"
 export PATH="$HOME/.bin:$PATH"
 
 # Add node modules to $PATH
-export PATH="$PATH:$HOME/.asdf/installs/nodejs/9.3.0/.npm/bin"
+export PATH="$PATH:$HOME/.asdf/installs/nodejs/11.6.0/.npm/bin"
 
 # recommended by brew doctor
 export PATH="$HOME/usr/local/bin:$PATH"
