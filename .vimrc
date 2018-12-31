@@ -23,8 +23,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'ludovicchabant/vim-gutentags'
-Plugin 'neomake/neomake'
-Plugin 'elixir-lang/vim-elixir'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'w0rp/ale'
 
@@ -66,7 +64,6 @@ augroup myfiletypes
 augroup END
 
 " ==================================
-
 
 " ==================================
 " ALE Linting Config
