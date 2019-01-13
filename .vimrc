@@ -138,8 +138,8 @@ imap <c-a> <c-o>^
 nmap j gj
 nmap k gk
 
-" Copy the entire buffer into the system register
-nmap <leader>co ggVG*y
+" Copy the entire buffer into the system register, ie Copy All
+nmap <leader>ca ggVGy
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Test-running stuff
