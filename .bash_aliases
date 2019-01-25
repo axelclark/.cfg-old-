@@ -18,7 +18,7 @@ alias pgrmpid="rm /usr/local/var/postgres/postmaster.pid"
 #Elixir Phoenix
 alias mps="mix phx.server"
 alias ism="iex -S mix"
-alias mt="mix test --exclude integration"
+alias mt="mix test"
 alias mta="mix test"
 alias mts="mix test --stale"
 alias mec="mix ecto.create"
