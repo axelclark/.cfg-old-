@@ -1,4 +1,4 @@
 ruby 2.5.0-rc1
-erlang 21.0
+erlang 21.3.6
 nodejs 11.6.0
-elixir 1.7.3
+elixir 1.8.1-otp-21

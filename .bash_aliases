@@ -22,6 +22,8 @@ alias mt="mix test"
 alias mts="mix test --stale"
 alias mec="mix ecto.create"
 alias mem="mix ecto.migrate"
+alias mt0="export MIX_TARGET=rpi0"
+alias mt3="export MIX_TARGET=rpi3"
 
 #ReactNative
 alias r-ios="react-native run-ios"
