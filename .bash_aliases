@@ -45,3 +45,6 @@ alias gs="git status"
 
 #Vim
 alias rmntl="find . -name '*Netrw*' -exec rm -f {} \;"
+
+#Jekyll
+alias bjs="bundle exec jekyll server"

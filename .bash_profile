@@ -31,3 +31,6 @@ export PATH="$HOME/usr/local/bin:$PATH"
 
 # Enable history in IEX
 export ERL_AFLAGS="-kernel shell_history enabled"
+
+# autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
