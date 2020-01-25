@@ -2,7 +2,7 @@
 [user]
 # Please adapt and uncomment the following lines:
   name = Axel Clark
-  email = axelclark2@yahoo.com
+	email = axel.clark@pm.me
 [credential]
   helper = osxkeychain
 [push]

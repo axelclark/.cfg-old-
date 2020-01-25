@@ -27,9 +27,12 @@ Plugin 'elixir-editors/vim-elixir'
 Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'w0rp/ale'
+Plugin 'suan/vim-instant-markdown', {'rtp': 'after'}
 
 " Colors
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'vim-airline/vim-airline-themes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -45,7 +48,8 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " Use the colorscheme from above
-colorscheme jellybeans
+autocmd BufEnter * colorscheme jellybeans
+let g:airline_theme='jellybeans'
 
 " ==================================
 " Ruby stuff
@@ -290,25 +294,30 @@ nmap <Leader>u :call MergeTabs()<CR>
 "VIM Airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-if !exists('g:airline_symbols')
-let g:airline_symbols = {}
-endif
-" unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
+set guifont=MesloLGS\ Nerd\ Font:h11
 
 " Use JSX syntax highlighting in .js files
 let g:jsx_ext_required = 0
+
+
+" ==================================
+" Markdown stuff
+" ==================================
+augroup Markdown
+  autocmd!
+  autocmd FileType markdown set wrap
+  autocmd FileType markdown set linebreak
+  autocmd FileType markdown set nolist
+  autocmd FileType markdown set colorcolumn=
+  autocmd BufEnter *.md colorscheme beauty256
+augroup END
+
+let g:instant_markdown_autostart = 0
+nmap <Leader>mp :InstantMarkdownPreview<cr>
+nmap <Leader>ms :InstantMarkdownStop<cr>
+
+map <Leader>sp :setlocal spell! spelllang=en_us<CR>
+set spellfile=~/.vim/spell/en.utf-8.add
 
 " ========================================================================
 " End of things set by me.
