@@ -12,6 +12,10 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+setopt AUTO_CD
+setopt NO_CASE_GLOB
+setopt CORRECT
+setopt CORRECT_ALL
 
 # display current git branch
 parse_git_branch() {
