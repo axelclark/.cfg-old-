@@ -1,6 +1,6 @@
 ruby 2.5.0-rc1
-erlang 22.0
+erlang 23.0
 nodejs 11.6.0
-elixir 1.9.1-otp-22
+elixir 1.10.3-otp-23
 postgres 10.10
 python 3.8.0

@@ -122,8 +122,12 @@ map <Leader>a :!mix test --no-color<cr>
 map <Leader>t :!mix test % --no-color<cr>
 map <Leader>yt :!yarn test % --no-color<cr>
 map <Leader>mf gggqG
-" vim-fugitive for git status
+
+" vim-fugitive
 map <Leader>g :Gstatus<cr>
+map <Leader>ga :Gwrite<cr>
+map <Leader>gc :tab Git commit -v<Space>
+
 " Ctags jump to definition
 map <Leader>c <C-]>
 " Ctags jump back
@@ -308,6 +312,7 @@ augroup Markdown
   autocmd FileType markdown set wrap
   autocmd FileType markdown set linebreak
   autocmd FileType markdown set nolist
+  autocmd FileType markdown set wrapmargin=0
   autocmd FileType markdown set colorcolumn=
   autocmd BufEnter *.md colorscheme beauty256
 augroup END
