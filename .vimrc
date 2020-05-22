@@ -22,6 +22,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-projectionist'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'elixir-editors/vim-elixir'
 Plugin 'ludovicchabant/vim-gutentags'
@@ -92,7 +93,7 @@ let g:ale_linters = {
 \   'javascript': ['eslint', 'prettier'],
 \   'elixir': ['elixir-ls']
 \}
-let g:ale_elixir_elixir_ls_release = '/Users/jackclark/workspace/elixir-ls/rel'
+let g:ale_elixir_elixir_ls_release = '~/.elixir-ls'
 
 " Enable completion where available.
 " This setting must be set before ALE is loaded.
