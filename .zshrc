@@ -183,3 +183,4 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 [ -f /Users/jackclark/.asdf/installs/nodejs/11.6.0/.npm/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash ] && . /Users/jackclark/.asdf/installs/nodejs/11.6.0/.npm/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash
 
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.elixir-ls:$PATH"

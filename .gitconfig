@@ -26,3 +26,5 @@
   safecrlf = true
   editor = vim
 	excludesfile = /Users/jackclark/.gitignore
+[init]
+	defaultBranch = main
