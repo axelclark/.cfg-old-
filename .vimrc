@@ -258,7 +258,9 @@ map <Leader>yt :!yarn test % --no-color<cr>
 " vim-test
 nmap <silent> <Leader>n :TestNearest<CR>
 nmap <silent> <Leader>t :TestFile<CR>
+nmap <silent> <Leader>tf :TestSuite --failed<CR>
 nmap <silent> <Leader>a :TestSuite<CR>
+nmap <silent> <Leader>af :TestSuite --failed<CR>
 nmap <silent> <Leader>l :TestLast<CR>
 nmap <silent> <Leader>v :TestVisit<CR>
 let test#strategy = "vimterminal"
